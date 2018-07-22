@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>批改作业</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="style.js"></script>
+</head>
+<body>
+<!--主页-->
+<div class="top">
+    <img class="u5" src="images/u5.png">
+    <img class="u21" src="images/u21.png">
+    <p class="text1">成果导向教育管理平台</p>
+    <p class="text2">陈志伟</p>
+    <div class="off"> </div>
+    <!--头部导航栏-->
+    <ul>
+        <li>教务云中心</li>
+        <li>教务管理</li>
+        <li>测评考核</li>
+        <li>就业考核</li>
+    </ul>
+</div>
+
+<!--主页中部（主要部分）-->
+<div class="main">
+    <div class="left"><!--左侧区域-->
+        <div class="details"><!--左侧导航-->
+            <details open>
+                <summary>
+                    作业管理
+                </summary>
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#">布置作业</a><br>
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#">批改作业</a><br>
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="#">作业分析</a><br>
+            </details>
+        </div>
+    </div>
+
+    <!--主页右侧区域-->
+    <div class="right">
+        <div class="titles"><!--右侧标题-->
+            <p class="text3">批改作业</p>
+        </div>
+
+        <!--input选项框-->
+        <div class="boxes">
+            <select class="box_1">
+                <option>课程名</option>
+                <option>web开发技术</option>
+            </select>
+            <!--课程名旁边的弹出框（第一个）-->
+            <a href="javascript:void (0)" id="p_1" class="p1"><abbr title="?"> <img src="images/cut.png"></abbr></a>
+
+            <div id="light_c" class="white_content3">
+                <div class="return_b"></div>
+                <a href="javascript:void (0)" id="but_c">
+                    <img class="black_cancel" src="images/black_cancel.jpg">
+                </a>
+
+                <h5>&nbsp;说明</h5>
+                &nbsp;<p class="p1_content"> &nbsp;从该界面列表获取所有的课程名</p>
+            </div>
+            <!--结束   课程名旁边的弹出框（第一个）-->
+
+
+
+            <select class="box_2">
+                <option>章节</option>
+                <option>第一章</option>
+                <option>第二章</option>
+                <option>第三章</option>
+                <option>第四章</option>
+                <option>第五章</option>
+                <option>第六章</option>
+                <option>第七章</option>
+                <option>第八章</option>
+                <option>第九章</option>
+                <option>第十章</option>
+            </select>
+            <!--课程名旁边的弹出框（第二个）-->
+            <a href="javascript:void (0)" id="p_2" class="p2"><abbr title="?"><img src="images/cut.png"></abbr></a>
+
+            <div id="light_d" class="white_content4">
+                <div class="return_b"></div>
+                <a href="javascript:void (0)" id="but_d">
+                    <img class="black_cancel" src="images/black_cancel.jpg">
+                </a>
+                <h5>&nbsp;说明</h5>
+                <p class="p1_content"> &nbsp;根据所选课程名从该界面列表获取章节</p>
+            </div>
+            <!--结束   课程名旁边的弹出框（第二个）-->
+
+
+            <input class="box_3" type="text" value="标题">
+            <!--课程名旁边的弹出框（第三个）-->
+            <a href="javascript:void (0)" id="p_3" class="p3"><abbr title="?"><img src="images/cut.png"></abbr></a>
+
+            <div id="light_e" class="white_content5">
+                <div class="return_b"></div>
+                <a href="javascript:void (0)" id="but_e">
+                    <img class="black_cancel" src="images/black_cancel.jpg">
+                </a>
+
+                <h5>&nbsp;说明</h5>
+                <p class="p1_content"> &nbsp;根据所选课程名从该界面列表获取章节</p>
+            </div>
+            <!--结束   课程名旁边的弹出框（第三个）-->
+
+
+            <input class="button" type="button" value="搜索">
+        </div>
+
+
+
+        <!--主页表格-->
+        <div class="tables">
+            <div class="one">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;课程名
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 章节
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 标题
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 显示日期
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 最晚提交时间
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 实交/应交
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 提交
+            </div>
+            <div class="two">
+                 &nbsp; &nbsp;web开发技术
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                 &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                 &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                 <a href = "javascript:void(0)" id="pic"><img src="images/u577.png"></a>
+
+                <!--以下是第二个大页面-->
+                 <div id="light" class="white_content">
+                    <a href = "javascript:void(0)" id="but"><div class="return">返回</div></a>
+                    <!--第二个大页面input选项框-->
+                    <div class="boxes">
+                        <input class="button_before" type="button" value="批量下载作业">
+
+                        <!--开始编写“授课班级“弹出框-->
+                        <a href="javascript:void (0)" id="p_6" >
+                        <div class="select">
+                            授课班级<img class="u189" src="images/u189.png">
+                        </div>
+                        </a>
+                       <!-- 第二个大页面“授课班级”弹出输入框内容-->
+                        <div id="light_h" class="white_content8">
+                            <div class="return_b_repeat">
+                                <span class="choose_class">班级选择</span>
+                            </div><!--return_b_repeat指的是第二个大页面授课班级弹出框的班级选择栏-->
+                            <a href="javascript:void (0)" id="but_h"><!--按此图案返回-->
+                                <img class="u184" src="images/u184.png">
+                            </a>
+                            <input class="department" type="text" value="院/系/专业">
+                            <input class="department_button" type="button" value="搜索">
+                            <div class="college"><!--滚动条区域-->
+                                <div class="content3">计算机科学与技术学院</div><br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17软件工程1班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17软件工程2班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17软件工程3班<br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17网络工程1班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17网络工程2班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17网络工程3班<br>
+                                    <span class="program">信息工程</span><br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17电子科学与技术1班
+                                    <input class="input2" type="checkbox" name="computer">
+                                    17电子科学与技术2班
+                                    <input class="input2" type="checkbox" name="computer">
+                                    17电子科学与技术3班<br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17通信工程1班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17通信工程2班
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17通信工程3班
+
+                                <div class="content4">商学院</div><br>
+                                    <span class="English">外语系</span><br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                     17日语1班
+                                    <input class="input1" type="checkbox" name="computer">
+                                     17日语2班
+                                    <input class="input1" type="checkbox" name="computer">
+                                     17日语3班<br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                     17英语1班
+                                    <input class="input1" type="checkbox" name="computer">
+                                     17英语2班<br>
+                                    <span class="manage">企业管理系</span><br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17市场营销1班
+                                    <input class="input3" type="checkbox" name="computer">
+                                    17市场营销2班<br>
+                                    <input class="input1" type="checkbox" name="computer">
+                                    17西方经济学1班
+                                    <input class="input2" type="checkbox" name="computer">
+                                    17西方经济学2班
+                                    <input class="input2" type="checkbox" name="computer">
+                                    17西方经济学3班
+                            </div>
+                        <button class="sure" >确定</button>
+                        <button class="not_sure" >取消</button>
+                        <p class="introduce">
+                            1、在该窗口内，所显示的内容是根据用户登录的用户名去判断权限，如系主任则可以选择对应的系下的班<br>
+                            级名单。可通过院、系、专业搜索，如超出权限范围操作则提示用户“输入错误，无法进行搜索”
+                        </p>
+                        </div>
+                       <!-- 结束   第二个大页面授课班级跳转输入框-->
+
+
+                        <!--第二个大页面授课班级【旁边】的弹出框（第一个）-->
+                        <a href="javascript:void (0)" id="p_4" class="p1_repeat"><abbr title="?"> <img src="images/cut.png"></abbr></a>
+
+                        <div id="light_f" class="white_content6">
+                            <div class="return_b"></div>
+                            <span class="shoukebanji">授课班级</span>
+                            <a href="javascript:void (0)" id="but_f">
+                                <img class="black_cancel" src="images/black_cancel.jpg">
+                            </a>
+
+                            <h5>&nbsp;说明</h5>
+                            &nbsp;<p class="p1_content"> &nbsp;根据所选课程名从该界面列表获取章节</p>
+                        </div>
+                        <!--结束   第二个大页面授课班级【旁边】的弹出框（第一个）-->
+
+
+                        <select class="box_2_repeat">
+                            <option>提交时间</option>
+                        </select>
+
+                        <!--第二个大页面授课班级【旁边】的弹出框（第二个）-->
+                        <a href="javascript:void (0)" id="p_5" class="p2_repeat"><abbr title="?"> <img src="images/cut.png"></abbr></a>
+
+                        <div id="light_g" class="white_content7">
+                            <div class="return_b"></div>
+                            <a href="javascript:void (0)" id="but_g">
+                                <img class="black_cancel" src="images/black_cancel.jpg">
+                            </a>
+
+                            <h5>&nbsp;说明</h5>
+                            <p class="p1_content"> &nbsp;从课程大纲根据课程名获取</p>
+                        </div>
+                        <!--结束   第二个大页面授课班级【旁边】的弹出框（第二个）-->
+
+
+
+                        <input class="box_3_repeat" type="text" value="姓名">
+
+                        <input class="button" type="button" value="搜索">
+
+                    </div>
+                    <!--第二个大页面的表格-->
+                    <div class="tables">
+                        <div class="one">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;院系
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;班级/人数
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;姓名
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 级
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 提交时间
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 分数
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 查看
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;批改
+                        </div>
+                        <div class="two">
+                            计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <a href = "javascript:void(0)" id="fangdajing"><img src="images/u130.png"></a>
+                            <!--以下是【第二个大页面表格第一排】查看栏弹出框-->
+                            <div id="light_a" class="white_content1"><!--弹出框-->
+                                <span class="a">查看成绩</span>
+                                <div class="return_a"></div><!--标题栏-->
+                                <a href = "javascript:void(0)" id="but_a">
+                                        <img class="u184" src="images/u184.png"><!--按此图案返回-->
+                                </a>
+                                <div class="content1">
+                                    <span class="b">作业内容</span>
+                                </div>
+                                <article>
+                                    课程/章节： Web开发技术         第十章<br>
+                                    标&nbsp; &nbsp;&nbsp; &nbsp;题： 10.2小节作业.<br>
+                                    说&nbsp; &nbsp;&nbsp; &nbsp;明：  第九章是第十章的基础，做这次作业需结<br>
+                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;合第九章知识来完成。<br>
+                                    作业提交： <span class="chenquan">2017/6/18陈泉.doc</span>
+                                </article>
+                                <div class="content2">
+                                    <span class="c">作业评分</span>
+                                    <span class="d">（以下评分点都以满分100计算)</span>
+                                </div>
+                                    <!--作业评分表-->
+                                    <input type="text" class="a1" value="评分点">
+                                    <input type="text" class="a2" value="得分">
+                                    <input type="text" class="a3"  value="评语">
+                                    <input type="text" class="a4"  value="Faj1">
+                                    <input type="text" class="a5"  value="89">
+                                    <input type="text" class="a6"  value="该生在本节的核心能力指标达标，但还有进步空间，仍需努力。">
+                                    <input type="text" class="a7" value="Faj2">
+                                    <input type="text" class="a8"  value="91">
+                                    <input type="text" class="a9" value="总分">
+                                    <input type="text" class="a10"  value="54">
+                                    <span class="e">（该学生未在最晚提交时间内提交，扣总成绩40%）</span>
+                                <div class="ok">确定</div>
+                                <div class="cancel">取消</div>
+                                <p class="description_a">
+                                    1、查看成绩窗口有作业内容、作业评分两块内容。<br>
+                                    2、作业内容有课程/章节、标题、说明、学生提交的作业文件名。<br>
+                                    3、作业评分的评分点是布置作业模块里新建作业勾选的核心能力指标和技能点，各评分点的分数、总分和评语是从批改作业<br>
+                                    &nbsp; &nbsp; &nbsp;  窗口获取的。<br>
+                                    4、页面红色提示文字是在学生超过最晚提交时间提交作业时才显示，学生的作业是在最晚提交时间前提交作业则不显示。
+                                </p>
+
+                            </div>
+                            <!--结束    【第二个大页面表格第一排】查看栏-->
+
+
+
+                            <!--以下是【第二个大页面表格第一排】批改栏弹出框-->
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <a href = "javascript:void(0)" id="pigai"><img src="images/u577.png"></a>
+                            <!--以下是批改栏-->
+                            <div id="light_b" class="white_content2"><!--批改栏弹出框-->
+                                <div class="return_a"></div>
+                                    <span class="a">查看成绩</span>
+                                <a href = "javascript:void(0)" id="but_b">
+                                     <img class="u184" src="images/u184.png"><!--按此图案返回-->
+                                </a>
+                                <div class="content1">
+                                    <span class="b">作业内容</span>
+                                </div>
+                                <article>
+                                    课程/章节： Web开发技术         第十章<br>
+                                    标&nbsp; &nbsp;&nbsp; &nbsp;题： 10.2小节作业.<br>
+                                    说&nbsp; &nbsp;&nbsp; &nbsp;明：  第九章是第十章的基础，做这次作业需结<br>
+                                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;合第九章知识来完成。<br>
+                                    作业提交： <span class="chenquan">2017/6/18陈泉.doc</span>
+                                    <span class="xaizai">下载</span>
+                                </article>
+                                <div class="content2">
+                                    <span class="c">作业评分</span>
+                                    <span class="d">（以下评分点都以满分100计算)</span>
+                                </div>
+                                <input type="text" class="a1" value="评分点">
+                                <input type="text" class="a2" value="得分">
+                                <p class="xinghao">*</p>
+                                <input type="text" class="a3"  value="评语">
+                                <input type="text" class="a4"  value="Faj1">
+                                <input type="text" class="a5"  value="">
+                                <input type="text" class="a6"  value="">
+                                <input type="text" class="a7" value="Faj2">
+                                <input type="text" class="a8"  value="">
+                                <input type="text" class="a9" value="总分">
+                                <input type="text" class="a10"  value="">
+                                <span class="e">（该学生未在最晚提交时间内提交，扣总成绩40%）</span>
+                                <div class="ok">确定</div>
+                                <div class="cancel">取消</div>
+                                <p class="description_a">
+                                    1、查看成绩窗口有作业内容、作业评分两块内容。<br>
+                                    2、作业内容有课程/章节、标题、说明、学生提交的作业文件名。<br>
+                                    3、作业评分的评分点是布置作业模块里新建作业勾选的核心能力指标和技能点，各评分点的分数、总分和评语是从批改作业<br>
+                                    &nbsp; &nbsp; &nbsp;  窗口获取的。<br>
+                                    4、页面红色提示文字是在学生超过最晚提交时间提交作业时才显示，学生的作业是在最晚提交时间前提交作业则不显示。
+                                </p>
+                            </div>
+                            <!--结束   【第二个大页面表格第一排】批改栏弹出框-->
+                        </div>
+                        <div class="three">
+                            计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+                        <div class="four">
+                            计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+                        <div class="five">
+                           计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+                        <div class="six">
+                           计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+                        <div class="seven">
+                            计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+                        <div class="eight">
+                           计算机科学与技术
+                            &nbsp; &nbsp;&nbsp; &nbsp;17软件工程1班
+                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;陈泉
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; 2017
+                            &nbsp;&nbsp; &nbsp; &nbsp;  2017/7/17
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;78
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                            <img src="images/u130.png">
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                            <img src="images/u577.png">
+                        </div>
+
+                        <!--第二个大页面底部轮播栏-->
+                        <div class="lunbo_repeat">
+                            <a href="#"> &lt;</a>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#"> 8</a>
+                            ...
+                            <a href="#"> 122</a>
+                            <a href="#"> 123</a>
+                            <a href="#">&gt;</a>
+                        </div>
+                        <div class="description_repeat">
+                            <p>
+                                1、该页面显示的是该课程提交作业的学生。一页显示15条，超过则翻页显示。<br>
+                                2、查找某学生提交的作业可通过分页条逐页查找，也可通过页面上方的班级栏，提交时间选择栏、姓名填写框搜索。<br>
+                                3、提交时间是学生提交作业的时间，未批改则无分数<br>
+                                4、【查看】每行信息后面有查看按钮，点击可查看学生提交的作业和成绩，如果该学生作业未批改则无成绩且不能查看<br>
+                                5、【批改】每行信息后面有批改按钮，点击批改学生作业。如果学生未提交作业则不能批改<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--结束       第二个大页面结束-->
+            </div>
+            <!--结束       以上主页面表格第二行结束-->
+
+
+            <div class="three">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+            <div class="four">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+            <div class="five">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+            <div class="six">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+            <div class="seven">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+            <div class="eight">
+                &nbsp; &nbsp;web开发技术
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; 第十章
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;10.2小节作业
+                &nbsp; &nbsp;&nbsp; &nbsp; 2017/6/12
+                &nbsp;&nbsp; &nbsp; &nbsp;  2017/6/15
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 42/46
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <img src="images/u577.png">
+            </div>
+        </div>
+        <!--主页底部轮播栏-->
+        <div class="lunbo">
+            <a href="#"> &lt;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">7</a>
+            <a href="#"> 8</a>
+             ...
+            <a href="#"> 122</a>
+            <a href="#"> 123</a>
+            <a href="#">&gt;</a>
+        </div>
+        <div class="description">
+            <p>
+                1、该页面的内容由布置作业模块获取。一页显示15条，超过则翻页显示。<br>
+                2、查看历史作业可通过分页条逐页查找，也可通过页面上方的搜索栏，用课程名、章节或标题进行查找。<br>
+                3、下发时间是用户新建作业和修改作业时间，以最新时间为准。应交人数和实交人数是统计交作业的学生人数。<br>
+                4、【批改】每行信息后面有批改按钮，点击跳转到批改作业界面。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
